@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import SaveCompte from './Component/form';
+import DisplayComptes from './Component/dispalcomptes';
+import TransactionStats from './Component/transactionstats';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App = () => {
+    return (
+        <div>
+            <h1>GraphQL Client</h1>
+            <SaveCompte />
+            <DisplayComptes />
+            <TransactionStats/>
+            
+        </div>
+    );
+};
 
 export default App;
